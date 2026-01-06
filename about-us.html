@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyond AIC - Responsive Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Inria Serif' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body>
+    <!-- Topbar -->
+    <div class="topbar">
+        <div class="container">
+            <div class="topbar-content">
+                <div class="topbar-left">
+                    <a href="tel:+1234567890" class="topbar-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+123 456 7890</span>
+                    </a>
+                    <a href="mailto:info@beyond.com" class="topbar-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@beyond.com</span>
+                    </a>
+                </div>
+                <div class="topbar-right">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="infinity-logo">∞</span><span class="beyond-text">Beyond</span><span
+                    class="aic-text">AIC</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Our Test</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Our Clinicians/Labs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News/Insights</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn-appointment">Get Appointment</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="hero-banner-wrapper">
+            <img src="assets/img/about-banner.png" alt="About Beyond AIC" class="hero-banner-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <!-- <div class="hero-content">
+            <div class="container">
+                <h1 class="hero-title">TRANSFORM YOUR<br>DIABETES CARE</h1>
+                <p class="hero-subtitle">One Advanced Test . Earlier Intervention . Better Outcomes</p>
+                <a href="#" class="hero-btn">LEARN MORE</a>
+            </div>
+        </div> -->
+    </section>
+
+    <section class="aboutus-section">
+        <div class="container aboutus-container">
+            <div class="aboutus-row">
+                <div class="aboutus-image-wrapper">
+                    <div class="aboutus-decorative-border"></div>
+                    <div class="aboutus-image-container">
+                        <img src="assets/img/about-img1.png" alt="Doctor and patient consultation"
+                            class="aboutus-image">
+                    </div>
+                </div>
+
+                <div class="aboutus-content">
+                    <h2 class="aboutus-title">About Us — beyondA1C</h2>
+                    <p class="aboutus-description">
+                        At beyondA1C, we're transforming diabetes care from reactive to predictive. While traditional
+                        HbA1C testing captures average glucose levels, it leaves critical gaps in understanding
+                        individual patient trajectories and complication risks.
+                    </p>
+                    <p class="aboutus-description">
+                        Our breakthrough diagnostic platform combines next-generation biomarkers with proprietary AI
+                        algorithms to deliver unprecedented insights into diabetes progression—empowering clinicians to
+                        intervene earlier, personalize treatment strategies, and fundamentally improve patient outcomes.
+                    </p>
+                    <h3 class="aboutus-mission-title">Our mission is clear:</h3>
+                    <p class="aboutus-mission-text">
+                        Transform diabetes management through precision diagnostics that predict, prevent, and
+                        personalize care for every patient
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works-section">
+        <div class="container">
+            <h2 class="section-title text-center">How It Works</h2>
+            <p class="section-subtitle text-center">A streamlined workflow that integrates seamlessly into existing
+                diabetes care protocols</p>
+
+            <div class="timeline-container">
+                <!-- Center Line (Track) -->
+                <div class="timeline-line"></div>
+                <!-- Progress Line (Fill) -->
+                <div class="timeline-progress"></div>
+
+                <!-- Step 1 -->
+                <div class="timeline-row">
+                    <div class="timeline-col left-col">
+                        <div class="icon-box-right">
+                            <img src="assets/img/works-icon1.png" alt="Sample Collection Icon" class="step-icon">
+                        </div>
+                    </div>
+
+                    <div class="timeline-col right-col">
+                        <div class="content-box-left">
+                            <div class="step-number">1</div>
+                            <h3 class="step-title"><span class="highlight-blue">Sample Collection</span> - <span
+                                    class="dark-blue">Seamless Integration</span></h3>
+                            <p class="step-description">
+                                Single blood draw collected during routine diabetes visits. No additional appointments
+                                or patient burden. Fully compatible with standard clinical workflows and existing
+                                laboratory infrastructure
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="timeline-row">
+                    <div class="timeline-col left-col">
+                        <div class="content-box-right">
+                            <div class="step-number">2</div>
+                            <h3 class="step-title"><span class="highlight-blue">Advanced Analysis</span> - <span
+                                    class="dark-blue">Multi-Biomarker Intelligence</span></h3>
+                            <p class="step-description">
+                                Our proprietary platform analyzes 20+ validated biomarkers using AI algorithms trained
+                                on comprehensive patient datasets. Advanced machine learning models assess metabolic,
+                                inflammatory, and vascular markers beyond glucose metrics.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-col right-col">
+                        <div class="icon-box-left">
+                            <img src="assets/img/works-icon2.png" alt="Advanced Analysis Icon" class="step-icon">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="timeline-row">
+                    <div class="timeline-col left-col">
+                        <div class="icon-box-right">
+                            <img src="assets/img/works-icon3.png" alt="Sample Collection Icon" class="step-icon">
+                        </div>
+                    </div>
+                    <div class="timeline-col right-col">
+                        <div class="content-box-left">
+                            <div class="step-number">3</div>
+                            <h3 class="step-title"><span class="highlight-blue">Risk Stratification</span> - <span
+                                    class="dark-blue">Precision Risk Assessment</span></h3>
+                            <p class="step-description">
+                                Comprehensive 5-year risk profiling across major diabetes complications: retinopathy,
+                                nephropathy, neuropathy, and cardiovascular disease. Results delivered as clear,
+                                actionable risk scores with confidence intervals.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="timeline-row">
+                    <div class="timeline-col left-col">
+                        <div class="content-box-right">
+                            <div class="step-number">4</div>
+                            <h3 class="step-title"><span class="highlight-blue">Clinical Action Plan</span> - <span
+                                    class="dark-blue">Personalized Care Pathways</span></h3>
+                            <p class="step-description">
+                                Our proprietary platform analyzes 20+ validated biomarkers using AI algorithms trained
+                                on comprehensive patient datasets. Advanced machine learning models assess metabolic,
+                                inflammatory, and vascular markers beyond glucose metrics.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-col right-col">
+                        <div class="icon-box-left">
+                            <img src="assets/img/works-icon4.png" alt="Advanced Analysis Icon" class="step-icon">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="clinical-section">
+        <div class="row content-wrapper g-0">
+            <div class="col-lg-6 col-md-12">
+                <div class="left-image">
+                    <img src="assets/img/doctors with smile.png" alt="Medical Team">
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12">
+                <div class="right-content">
+                    <h2>Clinical Evidence & Studies</h2>
+                    <h3>Clinical Evidence & Validation</h3>
+
+                    <p class="intro-text">
+                        Our diagnostic platform is built on a rigorous scientific foundation, supported by
+                        multi-center validation studies and real-world clinical evidence.
+                    </p>
+
+                    <h4 class="keys">Key Clinical Outcomes</h4>
+
+                    <div class="feature-item">
+                        <div class="check-icon"><i class="fa-solid fa-circle-check"></i></div>
+                        <p class="feature-text">
+                            3.2× improvement in diabetes complication prediction accuracy compared to A1C alone.
+                        </p>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="check-icon"><i class="fa-solid fa-circle-check"></i></div>
+                        <p class="feature-text">
+                            68% reduction in time-to-appropriate therapy intensification.
+                        </p>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="check-icon"><i class="fa-solid fa-circle-check"></i></div>
+                        <p class="feature-text">
+                            45% decrease in preventable emergency department visits in pilot programs.
+                        </p>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="check-icon"><i class="fa-solid fa-circle-check"></i></div>
+                        <p class="feature-text">
+                            $2,400 average annual cost savings per patient through targeted care.
+                        </p>
+                    </div>
+
+                    <div class="feature-item">
+                        <p class="feature-text">
+                            <i>Validated across diverse patient populations in collaboration with leading academic
+                                medical centers and healthcare systems.</i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="technology-section">
+        <div class="row content-wrapper g-0">
+
+            <div class="col-lg-6 col-md-12">
+                <div class="left-content">
+                    <h2>Technology Platform</h2>
+                    <h3>Our Technology Platform</h3>
+                    <p class="intro-texts">
+                        The beyondA1C diagnostic platform combines next-generation biomarker science
+                        with clinically validated artificial intelligence.
+                    </p>
+                    <h4 class="keys">Advanced Analysis</h4>
+
+                    <div class="feature-item">
+                        <div class="check-icons"><i class="fa-solid fa-circle-check"></i></div>
+                        <div class="feature-content">
+                            <p class="feature-title">Sample Collection:</p>
+                            <p class="feature-description">
+                                Standard blood sample (5ml)
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="check-icons"><i class="fa-solid fa-circle-check"></i></div>
+                        <div class="feature-content">
+                            <p class="feature-title">Biomarker Analysis:</p>
+                            <p class="feature-description">
+                                20+ validated inflammation, metabolism, and vascular markers
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="check-icons"><i class="fa-solid fa-circle-check"></i></div>
+                        <div class="feature-content">
+                            <p class="feature-title">AI Processing:</p>
+                            <p class="feature-description">
+                                Machine learning trained on 15,000+ patient outcomes
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="check-icons"><i class="fa-solid fa-circle-check"></i></div>
+                        <div class="feature-content">
+                            <p class="feature-title">Risk Scoring:</p>
+                            <p class="feature-description">
+                                Personalized 5-year complication probabilities
+                            </p>
+                        </div>
+                    </div>
+
+                    <h4 class="keys pt-4">Clinical Integration</h4>
+
+                    <div class="feature-item">
+                        <div class="check-icons"><i class="fa-solid fa-circle-check"></i></div>
+                        <div class="feature-content">
+                            <p class="feature-title"> EHR Compatible:</p>
+                            <p class="feature-description">
+                                Seamless integration with major health record systems
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="check-icons"><i class="fa-solid fa-circle-check"></i></div>
+                        <div class="feature-content">
+                            <p class="feature-title">Decision Support:</p>
+                            <p class="feature-description">
+                                Evidence-based treatment recommendations
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="check-icons"><i class="fa-solid fa-circle-check"></i></div>
+                        <div class="feature-content">
+                            <p class="feature-title">Quality Assured:</p>
+                            <p class="feature-description">
+                                CLIA-certified, clinically validated platfor
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12">
+                <div class="right-image">
+                    <img src="assets/img/senior doctor.png" alt="Clinical AI Technology Platform">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="comparison-section">
+        <div class="container-fluid p-0">
+            <div class="comparison-header text-center">
+                <h2>How It Comparison<br>
+                    A1C Alone vs beyondA1C + A1C
+                </h2>
+                <p class="container section-subtitle">
+                    Traditional A1C testing provides a snapshot of average glucose levels over three months — a useful
+                    metric, but one that misses the nuances of how diabetes progresses in different individuals.
+                </p>
+            </div>
+
+            <div class="comparison-container">
+                <!-- Left Side (Dark Blue) -->
+                <div class="comp-side left-side">
+                    <h3 class="side-title">A1C Alone</h3>
+                    <div class="side-icon">
+                        <img src="assets/img/comparison-icon-left.png" alt="A1C Alone Icon" class="comp-icon">
+                    </div>
+
+                    <ul class="comp-list">
+                        <li><i class="fa-solid fa-circle-check"></i> Average glucose only</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Limited to glycemic control</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Reactive (after complications arise)</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Retrospective</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Standardized approach</li>
+                    </ul>
+                </div>
+
+                <!-- Center Labels -->
+                <div class="comp-center">
+                    <div class="vs-badge">v/s</div>
+                    <div class="labels-wrapper">
+                        <div class="comp-label">Scope of insight</div>
+                        <div class="comp-label">Predictive capability</div>
+                        <div class="comp-label">Clinical actionability</div>
+                        <div class="comp-label">Outcome monitoring</div>
+                        <div class="comp-label">Care impact</div>
+                    </div>
+                </div>
+
+                <!-- Right Side (Bright Blue) -->
+                <div class="comp-side right-side">
+                    <h3 class="side-title">beyondA1C + A1C</h3>
+                    <div class="side-icon">
+                        <img src="assets/img/comparison-icon-right.png" alt="Beyond A1C Icon" class="comp-icon">
+                    </div>
+
+                    <ul class="comp-list">
+                        <li><i class="fa-solid fa-circle-check"></i> Multi-dimensional risk profiling using biomarkers,
+                            clinical variables & algorithms</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Predicts likelihood and timing of complications
+                        </li>
+                        <li><i class="fa-solid fa-circle-check"></i> Proactive (guides early intervention & tailored
+                            management)</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Continuous, data-driven updates</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Precision care & targeted resource allocation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <!-- Logo and Description -->
+                <div class="col-lg-4 col-md-6 footer-col">
+                    <div class="footer-logo-box">
+                        <a href="#" class="footer-logo">
+                            <span class="infinity-logo">∞</span><span class="beyond-text">Beyond</span><span
+                                class="aic-text">AIC</span>
+                        </a>
+                    </div>
+                    <p class="footer-description">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book.
+                    </p>
+                </div>
+
+                <!-- Our Links -->
+                <div class="col-lg-3 col-md-6 footer-col">
+                    <h3 class="footer-heading">Our Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Test</a></li>
+                        <li><a href="#">Our Clinicians/Labs</a></li>
+                        <li><a href="#">News/Insights</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div class="col-lg-3 col-md-6 footer-col">
+                    <h3 class="footer-heading">Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Documentations</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Us -->
+                <div class="col-lg-2 col-md-6 footer-col">
+                    <h3 class="footer-heading">Contact Us</h3>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h4>Address</h4>
+                            <p>United States</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h4>Phone</h4>
+                            <p>+012 345 6789</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h4>Email</h4>
+                            <p>info@beyond.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p class="copyright-text">© Copyright Beyond A1C All Rights Reserved.</p>
+            </div>
+        </div>
+
+        <!-- Scroll to Top Button -->
+        <a href="#" class="scroll-top">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelector('.scroll-top').addEventListener('click', function (e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const section = document.querySelector('.how-it-works-section');
+            const progressLine = document.querySelector('.timeline-progress');
+            const timelineRows = document.querySelectorAll('.timeline-row');
+
+            function setIconSource(row, toWhite) {
+                const icon = row.querySelector('.step-icon');
+                if (!icon) return;
+
+                if (!icon.hasAttribute('data-original-src')) {
+                    icon.setAttribute('data-original-src', icon.src);
+                }
+
+                const baseSrc = icon.getAttribute('data-original-src');
+                let newSrc = baseSrc;
+
+                if (toWhite) {
+                    if (baseSrc.includes('works-icon')) {
+                        newSrc = baseSrc.replace(/works-icon(\d+)/, 'works-icon-white$1');
+                    }
+                } else {
+                    newSrc = baseSrc;
+                }
+
+                if (icon.src !== newSrc) {
+                    icon.src = newSrc;
+                }
+            }
+
+            function updateRowState(row) {
+                const isActive = row.classList.contains('active');
+                const isHovered = row.dataset.hovered === 'true';
+                setIconSource(row, isActive || isHovered);
+            }
+
+            timelineRows.forEach(row => {
+                const icon = row.querySelector('.step-icon');
+                if (icon) {
+                    icon.setAttribute('data-original-src', icon.src);
+                }
+
+                row.addEventListener('mouseenter', () => {
+                    row.dataset.hovered = 'true';
+                    updateRowState(row);
+                });
+                row.addEventListener('mouseleave', () => {
+                    row.dataset.hovered = 'false';
+                    updateRowState(row);
+                });
+            });
+
+            function updateTimeline() {
+                if (!section || !progressLine) return;
+
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                const triggerPoint = window.scrollY + window.innerHeight / 2; 
+
+                if (triggerPoint > sectionTop && triggerPoint < sectionTop + sectionHeight) {
+                    const progress = (triggerPoint - sectionTop) / sectionHeight;
+                    const heightPercentage = Math.min(Math.max(progress * 100, 0), 100);
+                    progressLine.style.height = `${heightPercentage}%`;
+                } else if (triggerPoint > sectionTop + sectionHeight) {
+                    progressLine.style.height = '100%';
+                } else {
+                    progressLine.style.height = '0%';
+                }
+
+                timelineRows.forEach(row => {
+                    const icon = row.querySelector('.step-icon');
+                    if (!icon) return;
+
+                    const iconRect = icon.getBoundingClientRect();
+                    const iconCenter = iconRect.top + window.scrollY + (iconRect.height / 2);
+
+                    const wasActive = row.classList.contains('active');
+                    let isActive = false;
+
+                    if (triggerPoint >= iconCenter) {
+                        isActive = true;
+                    }
+
+                    if (isActive !== wasActive) {
+                        if (isActive) {
+                            row.classList.add('active');
+                        } else {
+                            row.classList.remove('active');
+                        }
+                        updateRowState(row);
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', updateTimeline);
+            window.addEventListener('resize', updateTimeline); 
+            setTimeout(updateTimeline, 100);
+        });
+    </script>
+</body>
+
+</html>
