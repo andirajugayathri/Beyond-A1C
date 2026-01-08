@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How It Works Timeline</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Evidence-Based Clinical Decision Support</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -12,350 +12,538 @@
             box-sizing: border-box;
         }
 
-        body {
-            font-family: 'Poppins', sans-serif;
-            background: #ffffff;
+        .ebcds-wrapper {
+            background: linear-gradient(135deg, #e8eaf6 0%, #f3e5f5 100%);
+            min-height: 100vh;
+            padding: 60px 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
-        .how-it-works-section {
-            padding: 80px 0;
-            background: #ffffff;
-        }
-
-        .container {
-            max-width: 1200px;
+        .ebcds-container {
+            max-width: 1400px;
             margin: 0 auto;
-            padding: 0 20px;
         }
 
-        .section-title {
-            font-size: 48px;
+        .ebcds-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .ebcds-main-title {
+            color: #1a237e;
+            font-size: 2.8rem;
             font-weight: 700;
-            color: #0D1E62;
             margin-bottom: 15px;
         }
 
-        .section-subtitle {
-            font-size: 18px;
-            color: #666;
-            margin-bottom: 80px;
+        .ebcds-subtitle {
+            color: #5e6272;
+            font-size: 1.1rem;
+            font-weight: 400;
         }
 
-        .text-center {
-            text-align: center;
+        .ebcds-section-title {
+            color: #1a237e;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 30px;
         }
 
-        .timeline-container {
+        .ebcds-guidelines-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .ebcds-image-container {
             position: relative;
-            padding: 40px 0;
+            height: 100%;
+            min-height: 400px;
         }
 
-        /* Center vertical line */
-        .timeline-line {
+        .ebcds-main-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .ebcds-overlay-image {
             position: absolute;
-            left: 50%;
-            top: 0;
-            bottom: 0;
-            width: 3px;
-            background: #E8F0FF;
-            transform: translateX(-50%);
-            z-index: 0;
+            top: 20px;
+            right: 20px;
+            width: 45%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+            border: 5px solid white;
         }
 
-        /* Animated progress line */
-        .timeline-progress {
-            position: absolute;
-            left: 50%;
-            top: 0;
-            width: 3px;
-            background: #3366FF;
-            transform: translateX(-50%);
-            z-index: 1;
-            height: 0;
-            animation: progressGrow 2s ease-out forwards;
+        .ebcds-protocols-container {
+            background: white;
+            border-radius: 20px;
+            padding: 35px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
         }
 
-        @keyframes progressGrow {
-            to {
-                height: 100%;
-            }
+        .ebcds-protocol-title {
+            color: #1a237e;
+            font-size: 1.7rem;
+            font-weight: 700;
+            margin-bottom: 25px;
         }
 
-        .timeline-row {
+        .ebcds-risk-card {
+            background: #2563eb;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .ebcds-risk-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.3);
+        }
+
+        .ebcds-risk-header {
+            padding: 18px 25px;
+            cursor: pointer;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 100px;
-            position: relative;
-            opacity: 0;
-            animation: fadeInUp 0.6s ease-out forwards;
+            user-select: none;
         }
 
-        .timeline-row:nth-child(3) { animation-delay: 0.2s; }
-        .timeline-row:nth-child(4) { animation-delay: 0.4s; }
-        .timeline-row:nth-child(5) { animation-delay: 0.6s; }
-        .timeline-row:nth-child(6) { animation-delay: 0.8s; }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .timeline-row:last-child {
-            margin-bottom: 0;
-        }
-
-        .timeline-col {
-            width: 48%;
-        }
-
-        .left-col {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-        }
-
-        .right-col {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-        }
-
-        /* Step Number Circles */
-        .step-number {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            width: 55px;
-            height: 55px;
-            background: #3366FF;
+        .ebcds-risk-title {
             color: white;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .ebcds-risk-icon {
+            width: 24px;
+            height: 24px;
+            background: white;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 24px;
-            font-weight: 700;
-            z-index: 3;
-            box-shadow: 0 4px 15px rgba(51, 102, 255, 0.4);
-            border: 4px solid #ffffff;
-        }
-
-        /* Icon boxes */
-        .icon-box-right,
-        .icon-box-left {
-            width: 110px;
-            height: 110px;
-            background: #3366FF;
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s ease;
+            font-size: 14px;
             flex-shrink: 0;
         }
 
-        .icon-box-right {
-            margin-right: 40px;
+        .ebcds-risk-toggle {
+            color: white;
+            font-size: 20px;
+            transition: transform 0.3s ease;
         }
 
-        .icon-box-left {
-            margin-left: 40px;
+        .ebcds-risk-toggle.active {
+            transform: rotate(180deg);
         }
 
-        .icon-box-right:hover,
-        .icon-box-left:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 25px rgba(51, 102, 255, 0.4);
-        }
-
-        .step-icon,
-        .step-icon4 {
-            width: 60px;
-            height: 60px;
-            object-fit: contain;
-        }
-
-        /* Content boxes */
-        .content-box-left,
-        .content-box-right {
-            background: transparent;
+        .ebcds-risk-content {
+            background: #eff6ff;
             padding: 0;
-            transition: all 0.3s ease;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
         }
 
-        .content-box-left {
-            padding-left: 40px;
+        .ebcds-risk-content.active {
+            max-height: 500px;
+            padding: 25px;
         }
 
-        .content-box-right {
-            padding-right: 40px;
-            text-align: right;
+        .ebcds-risk-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 18px;
+            color: #1e3a8a;
         }
 
-        .step-title {
-            font-size: 24px;
-            font-weight: 600;
-            margin-bottom: 20px;
-            line-height: 1.4;
+        .ebcds-risk-item:last-child {
+            margin-bottom: 0;
         }
 
-        .highlight-blue {
-            color: #3366FF;
+        .ebcds-check-icon {
+            width: 24px;
+            height: 24px;
+            background: #2563eb;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            flex-shrink: 0;
+            margin-top: 2px;
         }
 
-        .dark-blue {
-            color: #0D1E62;
+        .ebcds-risk-text {
+            font-size: 1rem;
+            line-height: 1.6;
         }
 
-        .step-description {
-            font-size: 16px;
-            color: #555;
-            line-height: 1.8;
-            max-width: 500px;
+        .ebcds-bottom-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
         }
 
-        .content-box-right .step-description {
-            margin-left: auto;
+        .ebcds-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
         }
 
-        /* Responsive */
-        @media (max-width: 968px) {
-            .timeline-row {
-                flex-direction: column;
-                margin-bottom: 60px;
+        .ebcds-card-title {
+            color: #1a237e;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+
+        .ebcds-list-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .ebcds-list-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .ebcds-list-icon {
+            width: 28px;
+            height: 28px;
+            background: #1a237e;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .ebcds-list-content {
+            flex: 1;
+        }
+
+        .ebcds-list-label {
+            color: #2563eb;
+            font-weight: 700;
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+
+        .ebcds-list-description {
+            color: #4b5563;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 1200px) {
+            .ebcds-main-title {
+                font-size: 2.3rem;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .ebcds-guidelines-section,
+            .ebcds-bottom-section {
+                grid-template-columns: 1fr;
             }
 
-            .timeline-col {
-                width: 100%;
+            .ebcds-overlay-image {
+                width: 40%;
             }
 
-            .left-col,
-            .right-col {
-                justify-content: center;
-                margin-bottom: 20px;
+            .ebcds-main-title {
+                font-size: 2rem;
             }
 
-            .timeline-line,
-            .timeline-progress {
-                left: 40px;
+            .ebcds-section-title {
+                font-size: 1.7rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .ebcds-wrapper {
+                padding: 40px 15px;
             }
 
-            .step-number {
-                left: 40px;
+            .ebcds-main-title {
+                font-size: 1.8rem;
             }
 
-            .icon-box-right,
-            .icon-box-left {
-                margin: 0;
+            .ebcds-subtitle {
+                font-size: 1rem;
             }
 
-            .content-box-left,
-            .content-box-right {
-                padding: 0 20px;
-                text-align: center;
+            .ebcds-section-title {
+                font-size: 1.5rem;
             }
 
-            .step-description {
-                margin: 0 auto;
+            .ebcds-protocols-container,
+            .ebcds-card {
+                padding: 25px;
+            }
+
+            .ebcds-protocol-title,
+            .ebcds-card-title {
+                font-size: 1.5rem;
+            }
+
+            .ebcds-overlay-image {
+                width: 50%;
+                top: 15px;
+                right: 15px;
+            }
+
+            .ebcds-image-container {
+                min-height: 300px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .ebcds-main-title {
+                font-size: 1.5rem;
+            }
+
+            .ebcds-risk-header {
+                padding: 15px 18px;
+            }
+
+            .ebcds-risk-title {
+                font-size: 0.95rem;
+            }
+
+            .ebcds-protocols-container,
+            .ebcds-card {
+                padding: 20px;
             }
         }
     </style>
 </head>
 <body>
-    <section class="how-it-works-section">
-        <div class="container">
-            <h2 class="section-title text-center">How It Works</h2>
-            <p class="section-subtitle text-center">A streamlined workflow that integrates seamlessly into existing diabetes care protocols</p>
+    <div class="ebcds-wrapper">
+        <div class="ebcds-container">
+            <!-- Header -->
+            <div class="ebcds-header">
+                <h1 class="ebcds-main-title">Evidence-Based Clinical Decision Support</h1>
+                <p class="ebcds-subtitle">Comprehensive resources for optimal patient management</p>
+            </div>
 
-            <div class="timeline-container">
-                <!-- Center Line -->
-                <div class="timeline-line"></div>
-                <!-- Progress Line -->
-                <div class="timeline-progress"></div>
-
-                <!-- Step 1 -->
-                <div class="timeline-row">
-                    <div class="step-number">1</div>
-                    <div class="timeline-col left-col">
-                        <div class="icon-box-right">
-                            <img src="assets/img/works-icon1.png" alt="Sample Collection Icon" class="step-icon">
-                        </div>
+            <!-- Clinical Practice Guidelines Section -->
+            <div class="ebcds-guidelines-section">
+                <!-- Left Side - Images -->
+                <div>
+                    <h2 class="ebcds-section-title">Clinical Practice Guidelines</h2>
+                    <div class="ebcds-image-container">
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=600&fit=crop" alt="Doctor presenting clinical data" class="ebcds-main-image">
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=300&fit=crop" alt="Healthcare professional with tablet" class="ebcds-overlay-image">
                     </div>
+                </div>
+
+                <!-- Right Side - Risk-Based Management Protocols -->
+                <div class="ebcds-protocols-container">
+                    <h3 class="ebcds-protocol-title">Risk-Based Management Protocols</h3>
                     
-                    <div class="timeline-col right-col">
-                        <div class="content-box-left">
-                            <h3 class="step-title"><span class="highlight-blue">Sample Collection</span> - <span class="dark-blue">Seamless Integration</span></h3>
-                            <p class="step-description">
-                                Single blood draw collected during routine diabetes visits. No additional appointments or patient burden. Fully compatible with standard clinical workflows and existing laboratory infrastructure
-                            </p>
+                    <!-- High Risk Card -->
+                    <div class="ebcds-risk-card">
+                        <div class="ebcds-risk-header" onclick="toggleRiskCard('high')">
+                            <div class="ebcds-risk-title">
+                                <span class="ebcds-risk-icon">⚠️</span>
+                                High Risk (Score >75th percentile)
+                            </div>
+                            <span class="ebcds-risk-toggle active" id="toggle-high">▲</span>
+                        </div>
+                        <div class="ebcds-risk-content active" id="content-high">
+                            <div class="ebcds-risk-item">
+                                <span class="ebcds-check-icon">✓</span>
+                                <span class="ebcds-risk-text">Intensify glucose management (HbA1c target <7.0%)</span>
+                            </div>
+                            <div class="ebcds-risk-item">
+                                <span class="ebcds-check-icon">✓</span>
+                                <span class="ebcds-risk-text">Initiate cardioprotective therapies (ACE/ARB, statins)</span>
+                            </div>
+                            <div class="ebcds-risk-item">
+                                <span class="ebcds-check-icon">✓</span>
+                                <span class="ebcds-risk-text">Quarterly monitoring with ophthalmology/nephrology referrals</span>
+                            </div>
+                            <div class="ebcds-risk-item">
+                                <span class="ebcds-check-icon">✓</span>
+                                <span class="ebcds-risk-text">Consider CGM and advanced diabetes technologies</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Moderate Risk Card -->
+                    <div class="ebcds-risk-card">
+                        <div class="ebcds-risk-header" onclick="toggleRiskCard('moderate')">
+                            <div class="ebcds-risk-title">
+                                <span class="ebcds-risk-icon">⊜</span>
+                                Moderate Risk (25th-75th percentile)
+                            </div>
+                            <span class="ebcds-risk-toggle" id="toggle-moderate">▼</span>
+                        </div>
+                        <div class="ebcds-risk-content" id="content-moderate">
+                            <div class="ebcds-risk-item">
+                                <span class="ebcds-check-icon">✓</span>
+                                <span class="ebcds-risk-text">Standard glucose management (HbA1c target <7.5%)</span>
+                            </div>
+                            <div class="ebcds-risk-item">
+                                <span class="ebcds-check-icon">✓</span>
+                                <span class="ebcds-risk-text">Biannual comprehensive screening</span>
+                            </div>
+                            <div class="ebcds-risk-item">
+                                <span class="ebcds-check-icon">✓</span>
+                                <span class="ebcds-risk-text">Lifestyle modification support and education</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Low Risk Card -->
+                    <div class="ebcds-risk-card">
+                        <div class="ebcds-risk-header" onclick="toggleRiskCard('low')">
+                            <div class="ebcds-risk-title">
+                                <span class="ebcds-risk-icon">⊖</span>
+                                Low Risk (<25th percentile)
+                            </div>
+                            <span class="ebcds-risk-toggle" id="toggle-low">▼</span>
+                        </div>
+                        <div class="ebcds-risk-content" id="content-low">
+                            <div class="ebcds-risk-item">
+                                <span class="ebcds-check-icon">✓</span>
+                                <span class="ebcds-risk-text">Maintain current management approach</span>
+                            </div>
+                            <div class="ebcds-risk-item">
+                                <span class="ebcds-check-icon">✓</span>
+                                <span class="ebcds-risk-text">Annual comprehensive screening</span>
+                            </div>
+                            <div class="ebcds-risk-item">
+                                <span class="ebcds-check-icon">✓</span>
+                                <span class="ebcds-risk-text">Continue preventive care and monitoring</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="ebcds-bottom-section">
+                <!-- Patient Communication Tools -->
+                <div class="ebcds-card">
+                    <h3 class="ebcds-card-title">Patient Communication Tools</h3>
+                    
+                    <div class="ebcds-list-item">
+                        <span class="ebcds-list-icon">✓</span>
+                        <div class="ebcds-list-content">
+                            <div class="ebcds-list-label">Risk Visualization:</div>
+                            <div class="ebcds-list-description">Patient-friendly infographics explaining results</div>
+                        </div>
+                    </div>
+
+                    <div class="ebcds-list-item">
+                        <span class="ebcds-list-icon">✓</span>
+                        <div class="ebcds-list-content">
+                            <div class="ebcds-list-label">Counseling Scripts:</div>
+                            <div class="ebcds-list-description">Evidence-based talking points for difficult conversations</div>
+                        </div>
+                    </div>
+
+                    <div class="ebcds-list-item">
+                        <span class="ebcds-list-icon">✓</span>
+                        <div class="ebcds-list-content">
+                            <div class="ebcds-list-label">Educational Materials:</div>
+                            <div class="ebcds-list-description">Brochures on diabetes complication prevention</div>
+                        </div>
+                    </div>
+
+                    <div class="ebcds-list-item">
+                        <span class="ebcds-list-icon">✓</span>
+                        <div class="ebcds-list-content">
+                            <div class="ebcds-list-label">Shared Decision-Making:</div>
+                            <div class="ebcds-list-description">Tools for collaborative treatment planning</div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Step 2 -->
-                <div class="timeline-row">
-                    <div class="step-number">2</div>
-                    <div class="timeline-col left-col">
-                        <div class="content-box-right">
-                            <h3 class="step-title"><span class="highlight-blue">Advanced Analysis</span> - <span class="dark-blue">Multi-Biomarker Intelligence</span></h3>
-                            <p class="step-description">
-                                Our proprietary platform analyzes 20+ validated biomarkers using AI algorithms trained on comprehensive patient datasets. Advanced machine learning models assess metabolic, inflammatory, and vascular markers beyond glucose metrics.
-                            </p>
+                <!-- Clinical Evidence Summary -->
+                <div class="ebcds-card">
+                    <h3 class="ebcds-card-title">Clinical Evidence Summary</h3>
+                    
+                    <div class="ebcds-list-item">
+                        <span class="ebcds-list-icon">✓</span>
+                        <div class="ebcds-list-content">
+                            <div class="ebcds-list-label">Validation Studies:</div>
+                            <div class="ebcds-list-description">Summary of key clinical trial results</div>
                         </div>
                     </div>
-                    <div class="timeline-col right-col">
-                        <div class="icon-box-left">
-                            <img src="assets/img/works-icon2.png" alt="Advanced Analysis Icon" class="step-icon">
+
+                    <div class="ebcds-list-item">
+                        <span class="ebcds-list-icon">✓</span>
+                        <div class="ebcds-list-content">
+                            <div class="ebcds-list-label">Real-World Evidence:</div>
+                            <div class="ebcds-list-description">Outcomes from implementation programs</div>
+                        </div>
+                    </div>
+
+                    <div class="ebcds-list-item">
+                        <span class="ebcds-list-icon">✓</span>
+                        <div class="ebcds-list-content">
+                            <div class="ebcds-list-label">Economic Analysis:</div>
+                            <div class="ebcds-list-description">Cost-effectiveness data for health system decision-makers</div>
+                        </div>
+                    </div>
+
+                    <div class="ebcds-list-item">
+                        <span class="ebcds-list-icon">✓</span>
+                        <div class="ebcds-list-content">
+                            <div class="ebcds-list-label">Quality Measures:</div>
+                            <div class="ebcds-list-description">Integration with diabetes quality reporting requirements</div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Step 3 -->
-                <div class="timeline-row">
-                    <div class="step-number">3</div>
-                    <div class="timeline-col left-col">
-                        <div class="icon-box-right">
-                            <img src="assets/img/works-icon3.png" alt="Risk Stratification Icon" class="step-icon">
-                        </div>
-                    </div>
-                    <div class="timeline-col right-col">
-                        <div class="content-box-left">
-                            <h3 class="step-title"><span class="highlight-blue">Risk Stratification</span> - <span class="dark-blue">Precision Risk Assessment</span></h3>
-                            <p class="step-description">
-                                Comprehensive 5-year risk profiling across major diabetes complications: retinopathy, nephropathy, neuropathy, and cardiovascular disease. Results delivered as clear, actionable risk scores with confidence intervals.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Step 4 -->
-                <div class="timeline-row">
-                    <div class="step-number">4</div>
-                    <div class="timeline-col left-col">
-                        <div class="content-box-right">
-                            <h3 class="step-title"><span class="highlight-blue">Clinical Action Plan</span> - <span class="dark-blue">Personalized Care Pathways</span></h3>
-                            <p class="step-description">
-                                Evidence-based treatment recommendations tailored to individual risk profiles. Clear guidance on intervention timing, therapy intensification, and monitoring frequency to optimize patient outcomes.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-col right-col">
-                        <div class="icon-box-left">
-                            <img src="assets/img/works-icon4.png" alt="Clinical Action Plan Icon" class="step-icon4">
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
-    </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleRiskCard(type) {
+            const content = document.getElementById(`content-${type}`);
+            const toggle = document.getElementById(`toggle-${type}`);
+            
+            content.classList.toggle('active');
+            toggle.classList.toggle('active');
+        }
+
+        // Add smooth scroll behavior
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyond AIC - Responsive Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Inria Serif' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body>
+    <!-- Topbar -->
+    <div class="topbar">
+        <div class="container">
+            <div class="topbar-content">
+                <div class="topbar-left">
+                    <a href="tel:+1234567890" class="topbar-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+123 456 7890</span>
+                    </a>
+                    <a href="mailto:info@beyond.com" class="topbar-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@beyond.com</span>
+                    </a>
+                </div>
+                <div class="topbar-right">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="infinity-logo">∞</span><span class="beyond-text">Beyond</span><span
+                    class="aic-text">AIC</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="our-test.html">Our Test</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Our Clinicians/Labs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News/Insights</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn-appointment">Get Appointment</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="hero-banner-wrapper">
+            <img src="assets/img/clinician-banner.png" alt="About Beyond AIC" class="hero-banner-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <!-- <div class="hero-content">
+            <div class="container">
+                <h1 class="hero-title">TRANSFORM YOUR<br>DIABETES CARE</h1>
+                <p class="hero-subtitle">One Advanced Test . Earlier Intervention . Better Outcomes</p>
+                <a href="#" class="hero-btn">LEARN MORE</a>
+            </div>
+        </div> -->
+    </section>
+
+     <!-- Market Opportunity Section -->
+    <section class="market-opportunity">
+        <div class="container">
+            <div class="market-badge">
+                <span class="badge rounded-pill">MARKET OPPORTUNITY PAGE</span>
+            </div>
+            <h2 class="market-main-title">The $45 Billion Diabetes Testing Market</h2>
+            <p class="market-subtitle">Significant opportunity in precision diagnostics and personalized
+                care</p>
+
+            <div class="market-size-header">
+                <h3 class="market-sub-title">Market Size & Growth</h3>
+                <p class="market-sub-desc">Global Diabetes Diagnostics Market</p>
+            </div>
+
+            <div class="market-grid">
+                <div class="market-card">
+                    <div class="market-card-icon"><img src="assets/img/growth-icon1.png" alt="market-growth"></div>
+                    <div class="market-card-value">$45.2 billion</div>
+                    <div class="market-card-label">Current Market (2024)</div>
+                </div>
+                <div class="market-card">
+                    <div class="market-card-icon"><img src="assets/img/growth-icon2.png" alt="market-growth"></div>
+                    <div class="market-card-value">12.3% CAGR</div>
+                    <div class="market-card-label">Projected Growth through 2030</div>
+                </div>
+                <div class="market-card">
+                    <div class="market-card-icon"><img src="assets/img/growth-icon3.png" alt="market-growth"></div>
+                    <div class="market-card-value">$12.8 Billion</div>
+                    <div class="market-card-label">Addressable Market in advanced diagnostics</div>
+                </div>
+                <div class="market-card">
+                    <div class="market-card-icon"><img src="assets/img/growth-icon4.png" alt="market-growth"></div>
+                    <div class="market-card-value">37 million</div>
+                    <div class="market-card-label">American with Diabetes (Target Segments)</div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- Market Drivers Section -->
+    <section class="market-drivers">
+        <div class="container">
+            <h2 class="market-main-title">Market Drivers</h2>
+            <div class="drivers-grid">
+                <div class="driver-block">
+                    <span class="driver-tag">Healthcare System Pressures</span>
+                    <!-- <h3 class="driver-title">Transforming Diabetes Care Delivery</h3> -->
+                    <ul class="driver-list">
+                        <li><i class="fas fa-circle"></i> Rising diabetes prevalence (11.3% US adults)</li>
+                        <li><i class="fas fa-circle"></i> Increasing complication-related costs ($327 billion)</li>
+                        <li><i class="fas fa-circle"></i> Quality measure reporting requirements</li>
+                        <li><i class="fas fa-circle"></i> Value-based care contracts incentivizing outcomes</li>
+                    </ul>
+                </div>
+                <div class="driver-block">
+                    <span class="driver-tag">Technological Advancements</span>
+                    <!-- <h3 class="driver-title">Precision Health Enablement</h3> -->
+                    <ul class="driver-list">
+                        <li><i class="fas fa-circle"></i> AI/ML adoption in healthcare diagnostics</li>
+                        <li><i class="fas fa-circle"></i> Biomarker discovery and validation capabilities</li>
+                        <li><i class="fas fa-circle"></i> EHR integration and clinical decision support</li>
+                        <li><i class="fas fa-circle"></i> Personalized medicine market expansion</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competitive Landscape Section -->
+    <section class="competitive-landscape">
+        <div class="container">
+            <h2 class="market-main-title">Competitive Landscape</h2>
+            <div class="landscape-grid">
+                <div class="landscape-card limitations">
+                    <span class="landscape-tag">Current Limitations of Existing Solutions</span>
+                    <ul class="landscape-list">
+                        <li><i class="fas fa-times"></i> HbA1c alone insufficient for risk prediction</li>
+                        <li><i class="fas fa-times"></i> Limited coordination across clinical settings</li>
+                        <li><i class="fas fa-times"></i> Fragmented clinical workflow integration</li>
+                        <li><i class="fas fa-times"></i> Inadequate decision support tools</li>
+                    </ul>
+                </div>
+                <div class="landscape-card advantages">
+                    <span class="landscape-tag">BeyondA1C™ Competitive Advantages</span>
+                    <ul class="landscape-list">
+                        <li><i class="fas fa-check"></i> Comprehensive multi-marker panel with clinical evidence</li>
+                        <li><i class="fas fa-check"></i> AI-powered risk prediction with proven accuracy</li>
+                        <li><i class="fas fa-check"></i> Seamless clinical workflow integration</li>
+                        <li><i class="fas fa-check"></i> Evidence-based management protocols</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Revenue Model Section -->
+    <section class="revenue-model mx-5">
+        <div class="container">
+            <h2 class="revenue-title text-center">Revenue Model</h2>
+            <div class="revenue-grid">
+                <div class="revenue-card">
+                    <h2 class="revenue-card-title">Test Volume</h2>
+                    <p class="revenue-card-text">High-volume, recurring diagnostic testing</p>
+                </div>
+                <div class="revenue-card">
+                    <h2 class="revenue-card-title">Value-Based Contracts</h2>
+                    <p class="revenue-card-text">Outcomes-based partnerships with health systems</p>
+                </div>
+                <div class="revenue-card">
+                    <h2 class="revenue-card-title">Clinical Decision Support</h2>
+                    <p class="revenue-card-text">Software licensing for EHR integration</p>
+                </div>
+                <div class="revenue-card">
+                    <h2 class="revenue-card-title">Professional Services</h2>
+                    <p class="revenue-card-text">Implementation and training programs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Webinars Section -->
+    <section class="webinars-section">
+        <div class="container">
+            <h2 class="Upcoming-title">Upcoming Webinars</h2>
+            <div class="webinar-grid">
+                <div class="webinar-card">
+                    <div class="webinar-header">
+                        <!-- <span class="webinar-tag">PRECISION DIAGNOSTICS IN DIABETES CARE</span> -->
+                        <h3 class="webinar-title">PRECISION DIAGNOSTICS IN DIABETES CARE:</h3>
+                        <h3 class="webinar-title">CLINICAL IMPLEMENTATION STRATEGIES</h3>
+                    </div>
+                    <div class="webinar-info">
+                        <div class="webinar-info-item">
+                            <span class="webinar-info-label">Time:</span>
+                            <span class="webinar-info-value">2:00 PM ET</span>
+                        </div>
+                        <div class="webinar-info-item">
+                            <span class="webinar-info-label">Speaker:</span>
+                            <span class="webinar-info-value">Dr. Amanda Foster, MD, Director of Medical Affairs</span>
+                        </div>
+                        <div class="webinar-info-item">
+                            <span class="webinar-info-label">Audience:</span>
+                            <span class="webinar-info-value">Endocrinologists, Primary Care Physicians, Diabetes
+                                Educators</span>
+                        </div>
+                        <div class="webinar-info-item">
+                            <span class="webinar-info-label">Credit:</span>
+                            <span class="webinar-info-value">CME Credit: 1.0 hours</span>
+                        </div>
+                    </div>
+                    <h4 class="webinar-objectives-title">Learning Objectives:</h4>
+                    <ul class="webinar-list">
+                        <li>Understand clinical evidence supporting precision diagnostics</li>
+                        <li>Learn implementation strategies</li>
+                        <li>Review case studies</li>
+                        <li>Discuss integration with care protocols</li>
+                    </ul>
+                    <a href="#" class="register-link">Register Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="webinar-card">
+                    <div class="webinar-header">
+                        <!-- <span class="webinar-tag">ECONOMIC IMPACT OF DIABETES MONITORING</span> -->
+                          <h3 class="webinar-title">Economic Impact of Diabetes Complications:</h3>
+                        <h3 class="webinar-title">THE VALUE OF EARLY DETECTION</h3>
+                    </div>
+                    <div class="webinar-info">
+                        <div class="webinar-info-item">
+                            <span class="webinar-info-label">Time:</span>
+                            <span class="webinar-info-value">11:00 AM ET</span>
+                        </div>
+                        <div class="webinar-info-item">
+                            <span class="webinar-info-label">Speaker:</span>
+                            <span class="webinar-info-value">David Lawson, Senior Medical Director, Quality &
+                                Outcomes</span>
+                        </div>
+                        <div class="webinar-info-item">
+                            <span class="webinar-info-label">Audience:</span>
+                            <span class="webinar-info-value">Health System Administrators, Payers</span>
+                        </div>
+                        <div class="webinar-info-item">
+                            <span class="webinar-info-label">Credit:</span>
+                            <span class="webinar-info-value">Professional Development credit: 1.0 hours</span>
+                        </div>
+                    </div>
+                    <h4 class="webinar-objectives-title">Learning Objectives:</h4>
+                    <ul class="webinar-list">
+                        <li>Cost-benefit analysis of multi-marker panels</li>
+                        <li>Economic benefits of early identification and intervention</li>
+                        <li>Impact on long-term population health outcomes</li>
+                        <li>Review payer reimbursement landscapes</li>
+                    </ul>
+                    <a href="#" class="register-link">Register Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collaboration Section -->
+    <section class="collaboration-section">
+        <div class="container">
+            <div class="market-badge">
+                <span class="badge rounded-pill">PARTNERSHIP OPPORTUNITIES</span>
+            </div>
+            <h2 class="market-main-title">Collaborate with Us to Transform Diabetes Care</h2>
+            <p class="market-subtitle">Strategic partnerships driving innovation and improving patient
+                outcomes</p>
+
+            <div class="collab-grid">
+                <div class="collab-column">
+                    <div class="collab-icon"><i class="fas fa-hospital"></i></div>
+                    <h3 class="collab-title">HEALTHCARE SYSTEM PARTNERSHIPS</h3>
+                    <ul class="collab-list">
+                        <li>Clinical workflow integration and staff training</li>
+                        <li>Outcomes measurement and quality improvement</li>
+                        <li>Research collaboration opportunities</li>
+                        <li>Value-based care contract development</li>
+                    </ul>
+                    <h4 class="collab-list-title">Benefits for Health Systems:</h4>
+                    <ul class="collab-list">
+                        <li>Improved diabetes care quality metrics</li>
+                        <li>Reduced complications and costs</li>
+                        <li>Enhanced patient satisfaction scores</li>
+                        <li>Competitive advantage in precision medicine</li>
+                    </ul>
+                </div>
+                <div class="collab-column">
+                    <div class="collab-icon"><i class="fas fa-vials"></i></div>
+                    <h3 class="collab-title">LABORATORY NETWORK PARTNERSHIPS</h3>
+                    <h4 class="collab-list-title">Reference Laboratory Services:</h4>
+                    <ul class="collab-list">
+                        <li>Co-marketed testing opportunities</li>
+                        <li>Advanced logistics and sample management</li>
+                        <li>Marketing and sales support</li>
+                        <li>Channel expansion opportunities</li>
+                    </ul>
+                </div>
+                <div class="collab-column">
+                    <div class="collab-icon"><i class="fas fa-flask"></i></div>
+                    <h3 class="collab-title">RESEARCH AND INNOVATION</h3>
+                    <h4 class="collab-list-title">Academic & Clinical Partners:</h4>
+                    <ul class="collab-list">
+                        <li>Clinical validation studies</li>
+                        <li>Biomarker discovery</li>
+                        <li>Publication opportunities</li>
+                        <li>Late-breaking clinical data</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="partnership-cta">
+        <div class="container partnerships">
+            <h2 class="cta-title">Contact Partnership Development</h2>
+            <p>Ready to discuss a strategic partnership?</p>
+            <a href="mailto:partnership@beyond.com" class="cta-email">partnerships@beyo</a>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <!-- Logo and Description -->
+                <div class="col-lg-4 col-md-6 footer-col">
+                    <div class="footer-logo-box">
+                        <a href="#" class="footer-logo">
+                            <span class="infinity-logo">∞</span><span class="beyond-text">Beyond</span><span
+                                class="aic-text">AIC</span>
+                        </a>
+                    </div>
+                    <p class="footer-description">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book.
+                    </p>
+                </div>
+
+                <!-- Our Links -->
+                <div class="col-lg-3 col-md-6 footer-col">
+                    <h3 class="footer-heading">Our Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Test</a></li>
+                        <li><a href="#">Our Clinicians/Labs</a></li>
+                        <li><a href="#">News/Insights</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div class="col-lg-3 col-md-6 footer-col">
+                    <h3 class="footer-heading">Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Documentations</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Us -->
+                <div class="col-lg-2 col-md-6 footer-col">
+                    <h3 class="footer-heading">Contact Us</h3>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h4>Address</h4>
+                            <p>United States</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h4>Phone</h4>
+                            <p>+012 345 6789</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h4>Email</h4>
+                            <p>info@beyond.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p class="copyright-text">© Copyright Beyond A1C All Rights Reserved.</p>
+            </div>
+        </div>
+
+        <!-- Scroll to Top Button -->
+        <a href="#" class="scroll-top">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelector('.scroll-top').addEventListener('click', function (e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
