@@ -53,7 +53,7 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
+                        <a class="nav-link" href="about-us.html">About Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="our-test.html">Our Test</a>
@@ -65,7 +65,7 @@
                         <a class="nav-link" href="news.html">News/Insights</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link" href="contact.html">Contact Us</a>
                     </li>
                     <li class="nav-item">
                         <button class="btn-appointment">Get Appointment</button>
@@ -466,12 +466,12 @@
                 <div class="col-lg-3 col-md-6 footer-col">
                     <h3 class="footer-heading">Our Links</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Our Test</a></li>
-                        <li><a href="#">Our Clinicians/Labs</a></li>
-                        <li><a href="#">News/Insights</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="our-test.html">Our Test</a></li>
+                        <li><a href="clinician.html">Our Clinicians/Labs</a></li>
+                        <li><a href="news.html">News/Insights</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
 
@@ -610,7 +610,7 @@
 
                 const sectionTop = section.offsetTop;
                 const sectionHeight = section.offsetHeight;
-                const triggerPoint = window.scrollY + window.innerHeight / 2; 
+                const triggerPoint = window.scrollY + window.innerHeight / 2;
 
                 if (triggerPoint > sectionTop && triggerPoint < sectionTop + sectionHeight) {
                     const progress = (triggerPoint - sectionTop) / sectionHeight;
@@ -648,7 +648,7 @@
             }
 
             window.addEventListener('scroll', updateTimeline);
-            window.addEventListener('resize', updateTimeline); 
+            window.addEventListener('resize', updateTimeline);
             setTimeout(updateTimeline, 100);
         });
     </script>

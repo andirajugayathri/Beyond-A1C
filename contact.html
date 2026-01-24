@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyond AIC - Responsive Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Inria Serif' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body>
+    <!-- Topbar -->
+    <div class="topbar">
+        <div class="container">
+            <div class="topbar-content">
+                <div class="topbar-left">
+                    <a href="tel:+1234567890" class="topbar-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+123 456 7890</span>
+                    </a>
+                    <a href="mailto:info@beyond.com" class="topbar-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@beyond.com</span>
+                    </a>
+                </div>
+                <div class="topbar-right">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="infinity-logo">∞</span><span class="beyond-text">Beyond</span><span
+                    class="aic-text">AIC</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="our-test.html">Our Test</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="clinician.html">Our Clinicians/Labs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">News/Insights</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn-appointment">Get Appointment</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="hero-banner-wrapper">
+            <img src="assets/img/contact-banner.png" alt="About Beyond AIC" class="hero-banner-img">
+            <div class="hero-overlay"></div>
+        </div>
+    </section>
+
+    <section class="help-section">
+        <div class="container">
+            <div class="help-header text-center">
+                <h2>How Can We Help You?</h2>
+                <p>Comprehensive resources for optimal patient Connect with our team for information about
+                    <strong>beyondA1C</strong> diagnostic services
+                </p>
+            </div>
+
+            <div class="contact-card">
+                <div class="row g-0">
+                    <div class="col-lg-6 contact-info-part">
+                        <div class="info-content">
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>1st Floor, 104-1, Millennium Square, Lumbini Avenue, Gachibowli, Hyderabad, Telangana
+                                    – 500032</p>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <p>info@beyondA1C.com</p>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <p>+1 (617) 555-0199</p>
+                            </div>
+
+                            <div class="getting-started mt-4">
+                                <h3>Getting Started</h3>
+                                <h4 class="text-primary mb-3">New Account Setup</h4>
+                                <ul class="checklist">
+                                    <li><i class="fas fa-check-square"></i> Facility registration and CLIA verification
+                                    </li>
+                                    <li><i class="fas fa-check-square"></i> Billing and insurance setup</li>
+                                    <li><i class="fas fa-check-square"></i> Staff training and implementation support
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 contact-form-part">
+                        <div class="form-content">
+                            <h3>Contact Us</h3>
+                            <form>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="tel" class="form-control" placeholder="Phone">
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control" rows="4" placeholder="Timings"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-submit">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <div class="faq-header text-center mb-5">
+                <h2>Sample Questions We Answer</h2>
+            </div>
+
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne">
+                            How does beyondA1C compare to traditional HbA1c testing?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Information about how beyondA1C compares to traditional HbA1c testing goes here.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo">
+                            What are the clinical performance characteristics?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Information about clinical performance characteristics goes here.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree">
+                            How do I integrate results into my clinical workflow?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Information about integrating results into clinical workflow goes here.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour">
+                            What is the cost per test and insurance coverage?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Information about the cost per test and insurance coverage can be found by contacting our
+                            billing department or reviewing our insurance particle guides.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Response Time Section -->
+    <section class="response-time-section text-center py-5">
+        <div class="container">
+            <h2 class="section-title text-white">Response Time</h2>
+            <p class="text-white mb-4">We respond to all inquiries within 24 hours during business days. For urgent
+                clinical questions, please call our support line directly.</p>
+            <h3 class="emergency-support text-white">Emergency Laboratory Support: <strong>+1 (617) 555-0177</strong>
+                (24/7)</h3>
+        </div>
+    </section>
+
+    <!-- Expert Support Section -->
+    <section class="expert-support-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Expert Clinical and Scientific Support</h2>
+                <p>Dedicated team of clinical experts supporting optimal test utilization</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="support-card h-100">
+                        <h3>Clinical Consultation</h3>
+                        <ul class="support-list">
+                            <li>Test interpretation and clinical correlation</li>
+                            <li>Case review and management recommendations</li>
+                            <li>Protocol development for institutional implementation</li>
+                            <li>Outcomes measurement and quality improvement support</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="support-card h-100">
+                        <h3>Scientific Information</h3>
+                        <ul class="support-list">
+                            <li>Clinical evidence summaries and literature reviews</li>
+                            <li>Regulatory and reimbursement guidance</li>
+                            <li>Research collaboration opportunities</li>
+                            <li>Publication and presentation support</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="support-card h-100">
+                        <h3>Educational Programs</h3>
+                        <ul class="support-list">
+                            <li>Webinar series on diabetes risk prediction</li>
+                            <li>Conference presentations and symposiums</li>
+                            <li>Clinical grand rounds presentations</li>
+                            <li>CME-accredited educational content</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Medical Affairs Section -->
+    <section class="medical-affairs-section py-5">
+        <div class="container">
+            <div class="medical-affairs-banner text-center text-white">
+                <h2 class="mb-4">Contact Medical Affairs</h2>
+                <div class="d-flex flex-wrap justify-content-center gap-4 mb-4">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (617) 555-0188</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>medical@beyondA1C.com</span>
+                    </div>
+                </div>
+                <p class="urgent-note"><strong>Urgent Clinical Questions:</strong> Available 24/7 for critical patient
+                    care decisions</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Request Types Section -->
+    <section class="request-types-section py-5">
+        <div class="container">
+            <h2 class="mb-4">Request Types:</h2>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <div class="request-item">
+                        <i class="fas fa-check-square me-2 text-primary"></i>
+                        <span>Clinical case consultation</span>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="request-item">
+                        <i class="fas fa-check-square me-2 text-primary"></i>
+                        <span>Research collaboration inquiries</span>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="request-item">
+                        <i class="fas fa-check-square me-2 text-primary"></i>
+                        <span>Scientific literature requests</span>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="request-item">
+                        <i class="fas fa-check-square me-2 text-primary"></i>
+                        <span>Educational program scheduling</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <!-- Logo and Description -->
+                <div class="col-lg-4 col-md-6 footer-col">
+                    <div class="footer-logo-box">
+                        <a href="#" class="footer-logo">
+                            <span class="infinity-logo">∞</span><span class="beyond-text">Beyond</span><span
+                                class="aic-text">AIC</span>
+                        </a>
+                    </div>
+                    <p class="footer-description">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                        galley
+                        of type and scrambled it to make a type specimen book.
+                    </p>
+                </div>
+
+                <!-- Our Links -->
+                <div class="col-lg-3 col-md-6 footer-col">
+                    <h3 class="footer-heading">Our Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="our-test.html">Our Test</a></li>
+                        <li><a href="clinician.html">Our Clinicians/Labs</a></li>
+                        <li><a href="news.html">News/Insights</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div class="col-lg-3 col-md-6 footer-col">
+                    <h3 class="footer-heading">Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Documentations</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Us -->
+                <div class="col-lg-2 col-md-6 footer-col">
+                    <h3 class="footer-heading">Contact Us</h3>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h4>Address</h4>
+                            <p>United States</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h4>Phone</h4>
+                            <p>+012 345 6789</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h4>Email</h4>
+                            <p>info@beyond.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p class="copyright-text">© Copyright Beyond A1C All Rights Reserved.</p>
+            </div>
+        </div>
+
+        <!-- Scroll to Top Button -->
+        <a href="#" class="scroll-top">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+
+</html>
