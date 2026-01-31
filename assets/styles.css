@@ -81,7 +81,7 @@ p {
 }
 
 .aic-text {
-  color: #4169e1;
+  color: #3366FF;
 }
 
 .navbar-nav {
@@ -97,11 +97,11 @@ p {
 }
 
 .nav-link:hover {
-  color: #4169e1;
+  color: #3366FF;
 }
 
 .btn-appointment {
-  background-color: #4169e1;
+  background-color: #3366FF;
   color: white;
   padding: 10px 30px;
   border-radius: 8px;
@@ -581,7 +581,7 @@ p {
 }
 
 .plus-icon:hover {
-  background-color: #4169e1;
+  background-color: #3366FF;
   color: white;
   transform: rotate(90deg);
 }
@@ -709,7 +709,7 @@ p {
 }
 
 .form-control:focus {
-  border-color: #4169e1;
+  border-color: #3366FF;
   box-shadow: 0 0 0 3px rgba(65, 105, 225, 0.1);
   background-color: white;
   outline: none;
@@ -773,7 +773,7 @@ textarea.form-control {
 }
 
 .info-value:hover {
-  color: #4169e1;
+  color: #3366FF;
 }
 
 .info-icon {
@@ -840,7 +840,7 @@ textarea.form-control {
 }
 
 .aic-text {
-  color: #4169e1;
+  color: #3366FF;
 }
 
 .footer-description {
@@ -960,7 +960,7 @@ textarea.form-control {
 }
 
 .footer-section .social-icon:hover {
-  background-color: #4169e1;
+  background-color: #3366FF;
   color: white;
   transform: translateY(-5px);
 }
@@ -1103,7 +1103,7 @@ textarea.form-control {
 }
 
 .hero-btn {
-  background-color: #4169e1;
+  background-color: #3366FF;
   color: white;
   font-size: 20px;
   font-weight: 700;
@@ -1826,7 +1826,7 @@ textarea.form-control {
    Comparison Section Styles
 ------------------------------------------- */
 .comparison-section {
-  padding: 80px 0px;
+  padding: 60px 0px;
   overflow: hidden;
 }
 
@@ -2014,7 +2014,8 @@ textarea.form-control {
    ======================================== */
 .test-overview-section {
   background-color: #E9EEFF;
-  padding: 80px 0;
+  padding: 60px 0;
+  margin-top: 40px;
 }
 
 .overview-image-container {
@@ -2035,7 +2036,7 @@ textarea.form-control {
 .overview-badge {
   display: inline-block;
   background-color: white;
-  color: #4169e1;
+  color: #3366FF;
   font-size: 14px;
   font-weight: 600;
   padding: 8px 20px;
@@ -2061,7 +2062,7 @@ textarea.form-control {
 }
 
 .overview-item {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   gap: 5px;
 }
@@ -2069,7 +2070,7 @@ textarea.form-control {
 .overview-label {
   font-size: 16px;
   font-weight: 700;
-  color: #4169e1;
+  color: #3366FF;
   font-family: "Poppins";
 }
 
@@ -2085,7 +2086,7 @@ textarea.form-control {
    ======================================== */
 .how-to-order-section {
   background-color: white;
-  padding: 80px 0;
+  padding: 60px 0;
 }
 
 .section-main-title {
@@ -2115,7 +2116,7 @@ textarea.form-control {
 }
 
 .order-steps-row {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   position: relative;
 }
 
@@ -2227,13 +2228,13 @@ textarea.form-control {
 
 /* Info Cards Row */
 .info-cards-row {
-  margin-top: 40px;
+  /* margin-top: 40px; */
 }
 
 .info-card {
   background-color: #3366FF;
   border-radius: 12px;
-  padding: 35px;
+  padding: 35px 35px 10px 35px;
   height: 100%;
   color: white;
 }
@@ -2421,7 +2422,7 @@ textarea.form-control {
 }
 
 .ebcds-container {
-  max-width: 1400px;
+  /* max-width: 1400px; */
   margin: 0 auto;
 }
 
@@ -2450,9 +2451,9 @@ textarea.form-control {
   margin-bottom: 30px;
 }
 
-.ebcds-guidelines-section {
+/* .ebcds-guidelines-section {
   margin-bottom: 60px;
-}
+} */
 
 .ebcds-image-container {
   position: relative;
@@ -2461,20 +2462,24 @@ textarea.form-control {
 }
 
 .ebcds-main-image {
-  width: 100%;
-  height: auto;
+ width: 450px;
+    height: 450px;
+    margin-top: 100px;
   object-fit: cover;
+  object-position: top;
+  border-radius: 20px;
 }
 
 .ebcds-overlay-image {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 45%;
-  height: auto;
-  border-radius: 15px;
+  top: 27px;
+  right: 80px;
+  width: 284px;
+  height: 213px;
+  border-radius: 20px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
-  border: 5px solid white;
+  border: 8px solid white;
+  z-index: 10;
 }
 
 .ebcds-protocols-container {
@@ -2489,26 +2494,60 @@ textarea.form-control {
 }
 
 .ebcds-risk-card {
-  background: #2563eb;
-  border-radius: 12px;
-  margin-bottom: 15px;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.2);
-  transition: all 0.3s ease;
+  background: transparent;
+  margin-bottom: 40px;
+  box-shadow: none;
+  border-radius: 0;
 }
 
 .ebcds-risk-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.3);
+  /* box-shadow: 0 6px 20px rgba(37, 99, 235, 0.3); */
 }
 
 .ebcds-risk-header {
+  background-color: #3366FF;
   padding: 18px 25px;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
   user-select: none;
+  border-radius: 50px;
+  transition: border-radius 0.3s ease;
+}
+
+/* Identify when header belongs to an open card - this requires JS to add a class to the header or parent. 
+   Assuming I can target the header via sibling selector if content comes after, but content isn't a sibling in a way that affects header upwards.
+   Since I cannot easily change JS right now without seeing it, I will assume the user clicks toggleRiskCard.
+   BUT, I can check if 'active' class is on toggle button nested inside? No CSS parent selector.
+   
+   Wait, if I can't modify JS, I might have a visual glitch where header stays round at bottom.
+   However, looking at the code: <div class="ebcds-risk-header" onclick="toggleRiskCard('high')">...</div>
+   The JS likely toggles content ID.
+   
+   If I want the header to change shape, I need a class on the header.
+   I'll assume I can add a sibling selector trick Or I might need to make the CONTENT obscure the bottom radius.
+   
+   Actually, let's set the border-radius of header to be conditional.
+   Ah, I can't without JS styling update.
+   
+   Let me try to edit the styles assuming I can fix the JS lightly later or use a generic approach.
+   Actually, if I look at the existing HTML:
+   <span class="ebcds-risk-toggle active" id="toggle-high">
+   
+   I can't select parent of active toggle.
+   
+   Visual trick: Move content margin-top UP to cover the bottom curves of the header?
+   Let's try that.
+*/
+
+
+
+/* Ensure header is on top */
+.ebcds-risk-header {
+  position: relative;
+  z-index: 2;
 }
 
 .ebcds-risk-title {
@@ -2519,6 +2558,7 @@ textarea.form-control {
   display: flex;
   align-items: center;
   gap: 12px;
+  font-family: "Poppins", sans-serif;
 }
 
 .ebcds-risk-icon {
@@ -2531,6 +2571,12 @@ textarea.form-control {
   justify-content: center;
   font-size: 14px;
   flex-shrink: 0;
+}
+
+/* Ensure header is on top */
+.ebcds-risk-header {
+  position: relative;
+  z-index: 2;
 }
 
 .ebcds-risk-icon i {
@@ -2549,16 +2595,30 @@ textarea.form-control {
 }
 
 .ebcds-risk-content {
-  background: #eff6ff;
-  padding: 0;
+  background: #E0E7FF;
+  padding: 0 30px;
+  height: 0;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease, padding 0.4s ease;
+  transition: all 0.4s ease;
+  opacity: 0;
+  border-radius: 0 0 20px 20px;
+  margin-top: -20px;
+  /* Pull up to hide header bottom radius */
+  position: relative;
+  z-index: 1;
+  /* Below header? No, header needs z-index 2 */
+  border-left: 5px solid #3366FF;
+  /* Matching the reference visual line */
 }
 
 .ebcds-risk-content.active {
-  max-height: 500px;
-  padding: 25px;
+  height: auto;
+  max-height: 600px;
+  /* Increased to fit content */
+  padding: 40px 30px 30px 30px;
+  /* Top padding handles overlap */
+  opacity: 1;
 }
 
 .ebcds-risk-item {
@@ -2591,10 +2651,17 @@ textarea.form-control {
 
 .ebcds-card {
   background: white;
-  border-radius: 20px;
-  padding: 40px;
+  border-radius: 10px;
+  padding: 20px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  height: 100%;
+  transition: transform 0.3s ease;
 }
+
+/* .ebcds-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+} */
 
 .ebcds-card-title {
   color: #1a237e;
@@ -2614,22 +2681,23 @@ textarea.form-control {
   margin-bottom: 0;
 }
 
-.ebcds-list-icon {
-  width: 28px;
-  height: 28px;
-  background: #1a237e;
+.ebcds-list-icon i {
+  width: auto;
+  height: 24px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: #0D1E62;
   flex-shrink: 0;
   margin-top: 2px;
+  font-size: 18px;
 }
 
 .ebcds-list-content {
   flex: 1;
   display: flex;
+  gap:5px;
 }
 
 .ebcds-list-label {
@@ -2637,6 +2705,7 @@ textarea.form-control {
   font-weight: 700;
   font-size: 1rem;
   margin-bottom: 5px;
+  font-family: "Poppins", sans-serif;
 }
 
 .ebcds-list-description {
@@ -2660,6 +2729,8 @@ textarea.form-control {
 
   .ebcds-overlay-image {
     width: 40%;
+    top: 20px;
+    right: 20px;
   }
 
   .ebcds-main-title {
@@ -2707,6 +2778,11 @@ textarea.form-control {
   .ebcds-image-container {
     min-height: 300px;
   }
+
+  .ebcds-main-image {
+    height: 350px;
+    width: auto;
+  }
 }
 
 @media (max-width: 576px) {
@@ -2750,7 +2826,7 @@ textarea.form-control {
 
 .interfering-subtitle {
   font-size: 16px;
-  color: #4169e1;
+  color: #3366FF;
   font-weight: 600;
   margin-bottom: 35px;
   font-family: "Poppins";
@@ -2778,7 +2854,7 @@ textarea.form-control {
 }
 
 .interfering-text strong {
-  color: #4169e1;
+  color: #3366FF;
   font-weight: 600;
 }
 
@@ -3132,9 +3208,9 @@ textarea.form-control {
 
 .quality-tab-content-container {
   background: #fff;
-  border: 1px solid #eef2ff;
+  border: 1px solid #B6C2BE;
   border-radius: 30px;
-  padding: 60px;
+  padding: 40px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03);
 }
 
@@ -3165,7 +3241,7 @@ textarea.form-control {
   align-items: center;
   gap: 15px;
   font-size: 18px;
-  color: #555;
+  color: #424242;
   margin-bottom: 15px;
 }
 
@@ -3364,7 +3440,7 @@ textarea.form-control {
 .market-card-value {
   font-size: 32px;
   font-weight: 700;
-  color: #0D1E62;
+  color: #0B4F8A;
   margin-bottom: 10px;
 }
 
@@ -3602,7 +3678,7 @@ textarea.form-control {
 .webinar-title {
   font-size: 22px;
   font-weight: 700;
-  color: #0D1E62;
+  color: #0B4F8A;
   font-family: "poppins" !important;
   line-height: 1.4;
   text-transform: uppercase;
@@ -3620,13 +3696,12 @@ textarea.form-control {
 
 .webinar-info-label {
   font-weight: 700;
-  color: #0D1E62;
   width: 100px;
   flex-shrink: 0;
 }
 
 .webinar-info-value {
-  color: #555;
+  color: #424242;
 }
 
 .webinar-objectives-title {
@@ -3644,7 +3719,7 @@ textarea.form-control {
 
 .webinar-list li {
   font-size: 14px;
-  color: #555;
+  color: #424242;
   margin-bottom: 10px;
   padding-left: 20px;
   position: relative;
@@ -3702,13 +3777,26 @@ textarea.form-control {
   margin-bottom: 25px;
   line-height: 1.3;
 }
+.collab-title::after {
+  content: "";
+  display: block;
+  margin: 10px auto 0;
+  border-bottom: 2px solid #E2E8F0;
+}
+
 
 .collab-list-title {
   font-weight: 700;
-  color: #3366FF;
+  color: #0D1E62;
   margin-bottom: 15px;
   font-size: 15px;
   text-transform: uppercase;
+}
+
+.collab-bg{
+  background-color: #F8FAFC;
+  padding: 15px;
+    margin-top: 28px;
 }
 
 .collab-list {
@@ -3717,8 +3805,8 @@ textarea.form-control {
 }
 
 .collab-list li {
-  font-size: 14px;
-  color: #555;
+  font-size: 16px;
+  color: #424242;
   margin-bottom: 12px;
   padding-left: 20px;
   position: relative;
@@ -3728,7 +3816,7 @@ textarea.form-control {
   content: "\f111";
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
-  font-size: 6px;
+  font-size: 5px;
   color: #3366FF;
   position: absolute;
   left: 0;
@@ -3911,7 +3999,7 @@ textarea.form-control {
 
 .blog-excerpt {
   font-size: 15px;
-  color: #555;
+  color: #424242;
   line-height: 1.6;
   margin-bottom: 25px;
   display: -webkit-box;
@@ -4035,7 +4123,7 @@ textarea.form-control {
 
 .press-excerpt {
   font-size: 16px;
-  color: #555;
+  color: #424242;
   line-height: 1.7;
   margin-bottom: 15px;
 }
@@ -4145,12 +4233,11 @@ textarea.form-control {
 .info-item {
   display: flex;
   align-items: flex-start;
-  gap: 20px;
   margin-bottom: 30px;
 }
 
 .info-item i {
-  color: #4169E1;
+  color: #3366FF;
   font-size: 24px;
   margin-top: 5px;
 }
@@ -4176,7 +4263,7 @@ textarea.form-control {
 .gs-subtitle {
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
-  color: #4169E1;
+  color: #3366FF;
   font-weight: 600;
   margin-bottom: 25px;
 }
@@ -4197,7 +4284,7 @@ textarea.form-control {
 }
 
 .gs-list li i {
-  color: #4169E1;
+  color: #3366FF;
   font-size: 20px;
 }
 
@@ -4331,9 +4418,9 @@ textarea.form-control {
 /* Help Section */
 .help-section {
   padding: 60px 0 0;
+  margin-top: 40px;
   position: relative;
   background: #fff;
-  /* Bottom part is white */
 }
 
 /* Dark top background covering ~70% of the header area height */
@@ -4378,11 +4465,8 @@ textarea.form-control {
   background: #fff;
   border-radius: 20px;
   overflow: visible;
-  /* Allow notch to be seen */
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   color: #333;
-  margin-bottom: -150px;
-  /* Pull the CARD DOWN into the next section/area */
   position: relative;
   z-index: 3;
 }
@@ -4431,7 +4515,7 @@ textarea.form-control {
 .checklist li {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   font-size: 16px;
 }
 
@@ -4442,13 +4526,12 @@ textarea.form-control {
 }
 
 .contact-form-part {
-  background: #3b71f7;
+  background: #3366FF;
   padding: 50px;
   color: #fff;
   position: relative;
 }
 
-/* Add the small notch/arrow on the left side of form part pointing left */
 .contact-form-part::before {
   content: '';
   position: absolute;
@@ -4458,7 +4541,7 @@ textarea.form-control {
   height: 0;
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
-  border-right: 15px solid #3b71f7;
+  border-right: 15px solid #3366FF;
 }
 
 .contact-form-part h3 {
@@ -4469,8 +4552,8 @@ textarea.form-control {
 }
 
 .contact-form-part .form-control {
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: #3366FF;
+  border: 2px solid #FFFFFF;
   color: #fff !important;
   padding: 12px 15px;
   border-radius: 8px;
@@ -4504,8 +4587,8 @@ textarea.form-control {
 
 /* FAQ Section */
 .faq-section {
-  padding: 100px 0;
-  background: #f8faff;
+  padding-top: 60px;
+  background: transparent;
 }
 
 .faq-header h2 {
@@ -4543,7 +4626,7 @@ textarea.form-control {
 
 .faq-section .accordion-body {
   background: #fff;
-  color: #555;
+  color: #424242;
   padding: 25px;
   line-height: 1.7;
 }
@@ -4564,108 +4647,111 @@ textarea.form-control {
     display: none;
   }
 }
+
 /* Response Time Section */
 .response-time-section {
-    background-color: #1a237e;
-    color: #ffffff;
+  background-color: #1a237e;
+  color: #ffffff;
 }
 
 .response-time-section .section-title {
-    font-family: 'Inria Serif', serif;
-    font-weight: 700;
-    font-size: 42px;
+  font-family: 'Inria Serif', serif;
+  font-weight: 700;
+  font-size: 42px;
 }
 
 .emergency-support {
-    font-family: 'Poppins', sans-serif;
-    font-size: 24px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
 }
 
 /* Expert Support Section */
 .expert-support-section .section-title {
-    font-family: 'Inria Serif', serif;
-    font-weight: 700;
-    font-size: 42px;
-    color: #1a237e;
+  font-family: 'Inria Serif', serif;
+  font-weight: 700;
+  font-size: 42px;
+  color: #1a237e;
 }
 
 .support-card {
-    background: #ffffff;
-    border: 1px solid #e0e0e0;
-    border-radius: 4px;
-    padding: 30px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  background: #ffffff;
+  border: 1px solid #3366FF33;
+  padding: 30px 30px 10px 30px;
+  box-shadow: 0px 1px 4px 0px #00000029;
 }
 
 .support-card h3 {
-    font-family: 'Inria Serif', serif;
-    color: #1a237e;
-    font-size: 28px;
-    margin-bottom: 20px;
+  font-family: 'Inria Serif', serif;
+  color: #1a237e;
+  font-size: 28px;
+  margin-bottom: 20px;
 }
 
 .support-list {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .support-list li {
-    position: relative;
-    padding-left: 25px;
-    margin-bottom: 12px;
-    font-size: 16px;
-    color: #444;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #444;
 }
 
 .support-list li::before {
-    content: '�';
-    position: absolute;
-    left: 0;
-    color: #3b71f7;
-    font-size: 24px;
-    line-height: 1;
-    top: -4px;
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #3b71f7;
+  font-size: 30px;
+  line-height: 1;
+  top: -4px;
 }
 
 /* Medical Affairs Section */
 .medical-affairs-banner {
-    background-color: #1a237e;
-    border-radius: 20px;
-    padding: 60px 40px;
+  background-color: #1a237e;
+  border-radius: 20px;
+  padding: 40px;
 }
 
 .medical-affairs-banner h2 {
-    font-family: 'Inria Serif', serif;
-    font-size: 36px;
+  font-family: 'Inria Serif', serif;
+  font-size: 36px;
 }
 
 .medical-affairs-banner .contact-item {
-    font-size: 24px;
-    display: flex;
-    align-items: center;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0!important;
 }
 
-.medical-affairs-banner .contact-item i {
-    margin-right: 15px;
-}
 
 .urgent-note {
-    font-size: 18px;
-    margin-top: 20px;
+  font-size: 18px;
+  margin-top: 20px;
+}
+.urgent-note strong{
+  font-size: 20px;
+  font-weight: 700;
+  color: #63B3ED;
 }
 
 /* Request Types Section */
 .request-types-section h2 {
-    color: #1a237e;
-    font-weight: 700;
+  color: #1a237e;
+  font-weight: 700;
 }
 
 .request-item {
-    font-size: 18px;
-    display: flex;
-    align-items: center;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
 }
 
 .request-item i {
-    font-size: 20px;
+  font-size: 20px;
 }
