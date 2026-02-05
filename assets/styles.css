@@ -3449,6 +3449,11 @@ textarea.form-control {
   color: #424242;
   line-height: 1.5;
 }
+@media (max-width: 768px) {
+    .market-grid {
+       grid-template-columns: 1fr;
+    }
+}
 
 /* Market Drivers Section */
 .market-drivers {}
